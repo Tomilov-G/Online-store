@@ -1,0 +1,52 @@
+.form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    &:hover{
+        opacity: 0.8;
+    }
+    .search__bar {
+        border: none;
+        background-color: var(--color-light-grey1);
+        height: 56px;
+        width: 100%;
+        border-radius: 8px;
+        background-image: url(../../assets/icons/Search.svg);
+        background-repeat: no-repeat;
+        background-position: 16px center; 
+        padding-left: 49px;
+        font-family: 'Figtree',sans-serif;
+        font-size: 22px;
+    }
+  }
+
+
+// Медиазапросы
+
+@media screen and (max-width: 1867px) {
+    .form__wrapper {
+        .search__bar {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .form__wrapper {
+        .search__bar {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form__wrapper {
+        .search__bar {
+            height: 35px;
+        }
+    }
+  
+}
+
+
+

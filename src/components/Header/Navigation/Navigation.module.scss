@@ -1,0 +1,99 @@
+.navigation {
+  &__list {
+    display: flex;
+    .list__item {
+      font-size: 24px;
+      padding-left: 52px;
+      text-wrap: nowrap;
+      &:nth-child(1) {
+        padding-left: 62px;
+      }
+      .item__link {
+        transition: transform 0.3s ease-out, color 0.3s ease-out;
+        text-decoration: none;
+        color: var(--color-dark);
+        font-family: "Epilogue", sans-serif;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-grey);
+        }
+      }
+    }
+  }
+}
+
+// Медиазапросы
+
+@media screen and (max-width: 1867px) {
+  .navigation {
+    .list__item {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .navigation {
+    .list__item {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navigation {
+    .list__item {
+      padding-left: 32px;
+      &:nth-child(1) {
+        padding-left: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    .list__item {
+      padding-left: 22px;
+      &:nth-child(1) {
+        padding-left: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .navigation {
+    .list__item {
+      font-size: 12px;
+      padding-left: 22px;
+      &:nth-child(1) {
+        padding-left: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .navigation {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    &__list {
+      flex-direction: column;
+      text-decoration: none;
+      .item__link {
+        margin-bottom: 30px;
+        font-family: "Epilogue", sans-serif;
+        font-size: 18px;
+        color: var(--color-dark);
+        text-decoration: none;
+        padding: 10px;
+        transition: filter 0.3s ease-in-out;
+        &:hover {
+          filter: drop-shadow(0 0 0.5em rgb(5, 7, 144));
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,13 @@
-import './main.scss'
+import "./main.scss";
+
+import Header from "./components/Header/Header";
 
 const App = () => {
-  return <p>Hello, world !</p>
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default App;

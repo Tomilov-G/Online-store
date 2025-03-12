@@ -1,0 +1,80 @@
+.icons {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 32px;
+  &__link {
+    &:hover {
+      cursor: pointer;
+    }
+    .icon {
+      color: var(--color-dark);
+      padding-left: 35px;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease-out, color 0.3s ease-out;
+    }
+    .favorites {
+      &:hover {
+        transform: translateY(-5px) scale(1.1);
+        color: rgb(194, 4, 4);
+      }
+    }
+    .cart {
+      &:hover {
+        transform: translateY(-5px) scale(1.1);
+        color: var(--color-grey);
+      }
+    }
+    .user {
+      &:hover {
+        transform: translateY(-5px) scale(1.1);
+        color: var(--color-dark-grey);
+      }
+    }
+  }
+}
+
+
+// Медиазапросы
+
+@media screen and (max-width: 1867px) {
+  .icons {
+    .icon {
+      padding-left: 25px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .icons {
+    .icon {
+      padding-left: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .icons {
+    margin-left: 22px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .icons {
+    margin-left: 0px;
+    .icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .icons {
+    display: none;
+  }
+}

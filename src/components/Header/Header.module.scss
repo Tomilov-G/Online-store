@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--color-light);
+  position: sticky;
+  z-index: 1000;
+  .container {
+    padding: 16px 150px;
+    margin: 0 auto;
+    width: 100%;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+// Медиазапросы
+
+@media screen and (max-width: 1867px) {
+  .header {
+    .container {
+      padding: 16px 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 1427px) {
+  .header {
+    .container {
+      padding: 16px 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1327px) {
+  .header {
+    .container {
+      padding: 16px 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .header {
+    .container {
+      padding: 16px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .header {
+    .container {
+      padding: 16px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .header {
+    .container {
+      padding: 33px 15px;
+      .container__inner {
+        .header__input {
+          display: none;
+        }
+        .header__navigation {
+          display: none;
+        }
+      }
+    }
+  }
+}
