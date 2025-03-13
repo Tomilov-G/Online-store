@@ -1,22 +1,25 @@
 .navigation {
-  &__list {
+  .navigationList {
     display: flex;
-    .list__item {
+    .listItem {
       font-size: 24px;
       padding-left: 52px;
       text-wrap: nowrap;
       &:nth-child(1) {
         padding-left: 62px;
       }
-      .item__link {
+      .itemLink {
         transition: transform 0.3s ease-out, color 0.3s ease-out;
         text-decoration: none;
-        color: var(--color-dark);
+        color: var(--color-grey);
         font-family: "Epilogue", sans-serif;
         &:hover {
           cursor: pointer;
-          color: var(--color-grey);
+          color: var(--color-dark);
         }
+      }
+      .activeLink {
+        color: var(--color-dark);
       }
     }
   }
@@ -26,26 +29,32 @@
 
 @media screen and (max-width: 1867px) {
   .navigation {
-    .list__item {
-      font-size: 16px;
+    .navigationList {
+      .listItem {
+        font-size: 16px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 1020px) {
   .navigation {
-    .list__item {
-      font-size: 14px;
+    .navigationList {
+      .listItem {
+        font-size: 14px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 950px) {
   .navigation {
-    .list__item {
-      padding-left: 32px;
-      &:nth-child(1) {
+    .navigationList {
+      .listItem {
         padding-left: 32px;
+        &:nth-child(1) {
+          padding-left: 32px;
+        }
       }
     }
   }
@@ -53,10 +62,12 @@
 
 @media screen and (max-width: 800px) {
   .navigation {
-    .list__item {
-      padding-left: 22px;
-      &:nth-child(1) {
+    .navigationList {
+      .listItem {
         padding-left: 22px;
+        &:nth-child(1) {
+          padding-left: 22px;
+        }
       }
     }
   }
@@ -64,11 +75,13 @@
 
 @media screen and (max-width: 735px) {
   .navigation {
-    .list__item {
-      font-size: 12px;
-      padding-left: 22px;
-      &:nth-child(1) {
+    .navigationList {
+      .listItem {
+        font-size: 12px;
         padding-left: 22px;
+        &:nth-child(1) {
+          padding-left: 22px;
+        }
       }
     }
   }
@@ -79,10 +92,10 @@
     margin-top: 70px;
     display: flex;
     justify-content: center;
-    &__list {
+    .navigationList {
       flex-direction: column;
-      text-decoration: none;
-      .item__link {
+      .itemLink {
+        text-decoration: none;
         margin-bottom: 30px;
         font-family: "Epilogue", sans-serif;
         font-size: 18px;

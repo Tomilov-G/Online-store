@@ -1,34 +1,59 @@
-import { FC } from 'react';
+import { FC } from "react";
 
 import classes from "./Navigation.module.scss";
+import { NavLink } from "react-router-dom";
 
 interface NavigationProps {
-  className: string;
+  className?: string;
+  onClick?: () => void;
 }
 
-const Navigation:FC<NavigationProps> = ({ className }) => {
+const Navigation: FC<NavigationProps> = ({ className, onClick }) => {
   return (
-    <nav className={`${classes.navigation} ${className || ''}`} role="navigation">
-      <ul className={classes.navigation__list}>
-        <li className={classes.list__item}>
-          <a href="/" className={classes.item__link}>
+    <nav
+      className={`${classes.navigation} ${className || ""}`}
+      role="navigation"
+    >
+      <ul className={classes.navigationList}>
+        <li className={classes.listItem}>
+          <NavLink
+            to="/"
+            onClick={onClick}
+            className={({ isActive }) =>
+              isActive ? `${classes.itemLink} ${classes.activeLink}`: classes.itemLink}
+            >
             Главная
-          </a>
+          </NavLink>
         </li>
-        <li className={classes.list__item}>
-          <a href="/" className={classes.item__link}>
+        <li className={classes.listItem}>
+          <NavLink 
+            to="/catalog"
+            onClick={onClick}             
+            className={({ isActive }) =>
+              isActive ? `${classes.itemLink} ${classes.activeLink}`: classes.itemLink}
+            >
             Каталог
-          </a>
+          </NavLink>
         </li>
-        <li className={classes.list__item}>
-          <a href="/" className={classes.item__link}>
+        <li className={classes.listItem}>
+          <NavLink  
+            to="/contacts"
+            onClick={onClick}             
+            className={({ isActive }) =>
+              isActive ? `${classes.itemLink} ${classes.activeLink}`: classes.itemLink}
+            >
             Контакты
-          </a>
+          </NavLink>
         </li>
-        <li className={classes.list__item}>
-          <a href="/" className={classes.item__link}>
+        <li className={classes.listItem}>
+          <NavLink  
+            to="/about"   
+            onClick={onClick}          
+            className={({ isActive }) =>
+              isActive ? `${classes.itemLink} ${classes.activeLink}`: classes.itemLink}
+            >
             О нас
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -9,14 +9,12 @@ import IconsBlock from "./IconsBlock/IconsBlock";
 const Header = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.container}>
-        <div className={classes.container__inner}>
-          <Logo />
-          <Input className={classes.header__input} />
-          <Navigation className={classes.header__navigation}/>
-          <IconsBlock />
-          <Burger />
-        </div>
+      <div className={classes.headerInner}>
+        <Logo />
+        <Input className={classes.headerInput} />
+        <Navigation className={classes.headerNavigation} />
+        <IconsBlock />
+        <Burger />
       </div>
     </header>
   );

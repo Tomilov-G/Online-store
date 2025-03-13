@@ -1,31 +1,33 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart,faCartShopping,faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-import classes from './IconsBlock.module.scss'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping, faUser, faHeart} from "@fortawesome/free-solid-svg-icons";
+
+import classes from "./IconsBlock.module.scss";
 
 const IconsBlock = () => {
   return (
     <div className={classes.icons}>
-      <a href="/" className={classes.icons__link}>
+      <Link to="/favorites" className={classes.iconsLink}>
         <FontAwesomeIcon
           icon={faHeart}
           className={`${classes.icon} ${classes.favorites}`}
         />
-      </a>
-      <a href="/" className={classes.icons__link}>
+      </Link>
+      <Link to="/cart" className={classes.iconsLink}>
         <FontAwesomeIcon
           icon={faCartShopping}
           className={`${classes.icon} ${classes.cart}`}
         />
-      </a>
-      <a href="/" className={classes.icons__link}>
+      </Link>
+      <Link to="/profile" className={classes.iconsLink}>
         <FontAwesomeIcon
           icon={faUser}
           className={`${classes.icon} ${classes.user}`}
         />
-      </a>
+      </Link>
     </div>
   );
 };
 
-export default IconsBlock
+export default IconsBlock;

@@ -2,12 +2,12 @@
   display: inline-flex;
   justify-content: center;
   margin-left: 32px;
-  &__link {
+  .iconsLink {
     &:hover {
       cursor: pointer;
     }
     .icon {
-      color: var(--color-dark);
+      color: rgb(30, 30, 30);
       padding-left: 35px;
       width: 40px;
       height: 40px;
@@ -34,25 +34,28 @@
   }
 }
 
-
 // Медиазапросы
 
 @media screen and (max-width: 1867px) {
   .icons {
-    .icon {
-      padding-left: 25px;
-      width: 25px;
-      height: 25px;
+    .iconsLink {
+      .icon {
+        padding-left: 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 1020px) {
   .icons {
-    .icon {
-      padding-left: 20px;
-      width: 20px;
-      height: 20px;
+    .iconsLink {
+      .icon {
+        padding-left: 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
@@ -66,9 +69,11 @@
 @media screen and (max-width: 735px) {
   .icons {
     margin-left: 0px;
-    .icon {
-      width: 15px;
-      height: 15px;
+    .iconsLink {
+      .icon {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 }

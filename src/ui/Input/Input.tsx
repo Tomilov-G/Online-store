@@ -7,8 +7,8 @@ interface InputProps {
 }
 const Input:FC< InputProps> = ({ className }) => {
   return (
-    <form action="" className={`${classes.form__wrapper} ${className || ''}`}>
-      <input type="text" placeholder="Поиск" className={classes.search__bar} />
+    <form action="" className={`${classes.formWrapper} ${className || ''}`}>
+      <input type="text" placeholder="Поиск" className={classes.searchBar} />
     </form>
   );
 };

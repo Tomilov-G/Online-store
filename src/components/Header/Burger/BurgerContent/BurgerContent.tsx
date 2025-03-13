@@ -16,19 +16,19 @@ interface BurgerContentProps {
 
 const BurgerContent:FC<BurgerContentProps> = ({ closeBurger, isOpen }) => {
   return (
-    <div className={`${classes.burger__content} ${isOpen ? classes.open : ""}`}>
-      <div className={classes.burger__icons}>
-        <Logo />
+    <div className={`${classes.burgerContent} ${isOpen ? classes.open : ""}`}>
+      <div className={classes.burgerIcons}>
+        <Logo onClick={closeBurger}/>
         <FontAwesomeIcon
           icon={faXmark}
           onClick={closeBurger}
           className={classes.closeIcon}
         />
       </div>
-      <div className={classes.burger__wrapper}>
-        <Input className={classes.burger__input} />
+      <div className={classes.burgerWrapper}>
+        <Input className={classes.burgerInput} />
       </div>
-        <Navigation className={classes.navigation}/>
+        <Navigation onClick={closeBurger} />
     </div>
   );
 };

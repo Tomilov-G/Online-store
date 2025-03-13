@@ -8,10 +8,10 @@ interface BurgerIconProps {
 
 const BurgerIcon:FC<BurgerIconProps> = ({ openBurger }) => {
   return (
-    <div className={classes.burger__icon} onClick={openBurger}>
-      <span className={classes.burger__line}></span>
-      <span className={classes.burger__line}></span>
-      <span className={classes.burger__line}></span>
+    <div className={classes.burgerIcon} onClick={openBurger}>
+      <span className={classes.burgerLine}></span>
+      <span className={classes.burgerLine}></span>
+      <span className={classes.burgerLine}></span>
     </div>
   );
 };
