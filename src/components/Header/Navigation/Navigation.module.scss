@@ -89,17 +89,17 @@
 
 @media screen and (max-width: 635px) {
   .navigation {
-    margin-top: 70px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     .navigationList {
       flex-direction: column;
       .itemLink {
         text-decoration: none;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         font-family: "Epilogue", sans-serif;
-        font-size: 18px;
-        color: var(--color-dark);
+        font-size: 20px;
+        color: var(--color-dark-grey) !important;
         text-decoration: none;
         padding: 10px;
         transition: filter 0.3s ease-in-out;

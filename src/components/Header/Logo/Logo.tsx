@@ -8,6 +8,7 @@ import { FC } from "react";
 interface LogoProps {
   onClick?: () => void;
 }
+
 const Logo:FC<LogoProps> = ({ onClick }) => {
   return (
     <Link to="/" onClick={onClick}>
