@@ -1,0 +1,112 @@
+.navigation {
+  .navigationList {
+    display: flex;
+    .listItem {
+      font-size: 24px;
+      padding-left: 52px;
+      text-wrap: nowrap;
+      &:nth-child(1) {
+        padding-left: 62px;
+      }
+      .itemLink {
+        transition: transform 0.3s ease-out, color 0.3s ease-out;
+        text-decoration: none;
+        color: var(--color-grey);
+        font-family: "Epilogue", sans-serif;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-dark);
+        }
+      }
+      .activeLink {
+        color: var(--color-dark);
+      }
+    }
+  }
+}
+
+// Медиазапросы
+
+@media screen and (max-width: 1867px) {
+  .navigation {
+    .navigationList {
+      .listItem {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .navigation {
+    .navigationList {
+      .listItem {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .navigation {
+    .navigationList {
+      .listItem {
+        padding-left: 32px;
+        &:nth-child(1) {
+          padding-left: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    .navigationList {
+      .listItem {
+        padding-left: 22px;
+        &:nth-child(1) {
+          padding-left: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .navigation {
+    .navigationList {
+      .listItem {
+        font-size: 12px;
+        padding-left: 22px;
+        &:nth-child(1) {
+          padding-left: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .navigation {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .navigationList {
+      flex-direction: column;
+      .itemLink {
+        text-decoration: none;
+        margin-bottom: 40px;
+        font-family: "Epilogue", sans-serif;
+        font-size: 20px;
+        color: var(--color-dark-grey) !important;
+        text-decoration: none;
+        padding: 10px;
+        transition: filter 0.3s ease-in-out;
+        &:hover {
+          filter: drop-shadow(0 0 0.5em rgb(5, 7, 144));
+        }
+      }
+    }
+  }
+}
