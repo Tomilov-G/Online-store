@@ -1,0 +1,55 @@
+.smallItemBanner {
+  align-items: center;
+  display: flex;
+  font-family: "SFProDisplay", sans-serif;
+  .textContent {
+    padding-right: 48px;
+    .title {
+      font-weight: 300;
+      font-size: 39px;
+      margin-bottom: 8px;
+      white-space: nowrap;
+      .spanTitle {
+        font-weight: 500;
+      }
+    }
+    .description {
+      font-weight: 500;
+      font-size: 22px;
+      color: var(--color-grey);
+    }
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .smallItemBanner {
+    .textContent {
+      .title {
+        font-size: 29px;
+      }
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .smallItemBanner {
+    flex-direction: column;
+    padding-inline: 16px;
+    padding-block: 40px;
+    .textContent {
+      text-align: center;
+      .title {
+        font-size: 34px;
+        .indent {
+          display: none;
+        }
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+  }
+}
