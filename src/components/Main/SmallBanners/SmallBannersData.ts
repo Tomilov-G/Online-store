@@ -61,7 +61,8 @@ const bannersData = [
     title: "Macbook",
     spanTitle: "Air",
     titleClassName: classes.title,
-    description: "В новом 15-дюймовом MacBook Air с просторным дисплеем Retina поместится еще больше того, что вы любите. ",
+    description:
+      "В новом 15-дюймовом MacBook Air с просторным дисплеем Retina поместится еще больше того, что вы любите. ",
   },
 ];
 
