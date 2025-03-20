@@ -13,8 +13,8 @@ const Categories = () => {
   }, []);
 
   return (
-    <section className={classes.slider}>
-      <div className={classes.sliderInner}>
+    <section className={classes.categories}>
+      <div className={classes.categoriesInner}>
         <h2 className={classes.title}>Категории</h2>
         <div className={classes.cardSection}>{CategoriesItem}</div>
       </div>
