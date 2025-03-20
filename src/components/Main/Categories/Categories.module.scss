@@ -1,0 +1,15 @@
+.slider {
+  font-family: "";
+  width: 100%;
+  .sliderInner {
+    padding: 80px 150px 80px 150px;
+    .title {
+      margin-bottom: 32px;
+    }
+    .cardSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

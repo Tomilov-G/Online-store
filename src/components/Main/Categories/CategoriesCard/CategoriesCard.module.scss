@@ -1,0 +1,26 @@
+.card {
+  background-color: var(--color-light-grey);
+  width: 160px;
+  height: 128px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 24px 0px 24px 0px;
+  justify-items: center;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.6;
+    transform: translateY(-10%);
+  }
+  .cardIcon {
+    margin-bottom: 8px;
+  }
+  .title {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-dark);
+    margin: 0px;
+  }
+}
+.cardLink {
+    text-decoration: none;
+}
