@@ -1,0 +1,41 @@
+.shopNowButton {
+  color: var(--color-light);
+  width: 262px;
+  height: 66px;
+  border: 2px solid var(--color-light);
+  background-color: transparent;
+  border-radius: 6px;
+  &:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.5s;
+  }
+  &:active {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.5s;
+  }
+  .buttonText {
+    font-size: 20px;
+    font-family: "SFProDisplay", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .shopNowButton {
+    width: 184px;
+    height: 56px;
+    border: 1px solid var(--color-light);
+    .buttonText {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .shopNowButton {
+    width: 184px;
+    height: 56px;
+  }
+}
