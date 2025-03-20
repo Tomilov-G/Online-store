@@ -1,0 +1,151 @@
+.textContent {
+  padding-right: 10px;
+  font-family: "SFProDisplay", sans-serif;
+  color: var(--color-light);
+  .slogan {
+    font-family: "Epilogue", sans-serif;
+    font-size: 30px;
+  }
+  .title {
+    display: flex;
+    font-weight: 100;
+    font-size: 106px;
+    white-space: nowrap;
+    word-spacing: -20px;
+    .titleSpan {
+      font-weight: 900;
+      margin-left: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid var(--color-light);
+      animation: typewriter 7s steps(1, end) infinite,
+        blink 0.7s step-start infinite;
+    }
+  }
+  .subtitle {
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-grey);
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  11% {
+    width: 11%;
+  }
+  17% {
+    width: 17.5%;
+  }
+  27% {
+    width: 27%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .textContent {
+    .slogan {
+      font-size: 25px;
+    }
+    .title {
+      font-size: 96px;
+    }
+    .subtitle {
+      padding-bottom: 24px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .textContent {
+    padding-right: 0px;
+    .subtitle {
+      padding-bottom: 40px;
+    }
+  }
+  .imageWrapper {
+    margin-top: -140px;
+    overflow: hidden;
+    .iphoneImage {
+      transform: translateY(150px);
+    }
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .textContent {
+    .title {
+      font-size: 80px;
+    }
+    .subtitle {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .textContent {
+    .title {
+      font-size: 72px;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 74px;
+      .titleSpan {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .imageWrapper {
+    margin-top: -80px;
+    overflow: hidden;
+    .iphoneImage {
+      width: 321px;
+      height: 289px;
+      transform: translateY(80px);
+    }
+  }
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    15% {
+      width: 15%;
+    }
+    22% {
+      width: 22%;
+    }
+    35% {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    17% {
+      width: 17%;
+    }
+    24% {
+      width: 24%;
+    }
+    40% {
+      width: 40%;
+    }
+  }
+}
+

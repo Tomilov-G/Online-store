@@ -1,9 +1,13 @@
-import Slider from "./Categories/Categories";
+import Banner from "./Banner/Banner";
+import Categories from "./Categories/Categories";
+import SmallBanners from "./SmallBanners/SmallBanners";
 
 const Main = () => {
   return (
     <main>
-      <Slider />
+      <Banner />
+      <SmallBanners />
+      <Categories />
     </main>
   );
 };

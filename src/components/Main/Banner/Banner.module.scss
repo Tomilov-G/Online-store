@@ -1,0 +1,75 @@
+.bigBanner {
+  background: -webkit-linear-gradient(to bottom, #000000, #434343);
+  background: linear-gradient(to right, #000000, #434343);
+  padding: 0px 550px;
+  width: 100%;
+  .bigBannerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 2240px) {
+  .bigBanner {
+    padding: 0px 450px;
+  }
+}
+
+@media screen and (max-width: 2055px) {
+  .bigBanner {
+    padding: 0px 350px;
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .bigBanner {
+    padding: 0px 300px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .bigBanner {
+    padding: 0px 250px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bigBanner {
+    padding: 0px 200px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .bigBanner {
+    padding: 0px 150px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .bigBanner {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 1246px) {
+  .bigBanner {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .bigBanner {
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .bigBanner {
+    padding-top: 50px;
+    .bigBannerInner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
