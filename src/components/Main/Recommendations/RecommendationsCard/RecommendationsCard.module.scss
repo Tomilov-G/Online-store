@@ -1,0 +1,12 @@
+.card {
+    width: 100%;
+    background-color: var(--color-light-grey);
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    padding: 24px 16px;
+    border-radius: 9px;
+    .title {
+        max-width: 236px;
+    }
+}

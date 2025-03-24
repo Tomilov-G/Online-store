@@ -1,0 +1,15 @@
+.toggleSection {
+  display: flex;
+  justify-content: space-between;
+  .arrows {
+    display: flex;
+    .arrowIcon {
+      width: 40px;
+      height: 40px;
+      margin-right: 70px;
+      &:nth-child(2) {
+        margin: 0px;
+      }
+    }
+  }
+}
