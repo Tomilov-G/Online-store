@@ -1,4 +1,5 @@
 import Banner from "./Banner/Banner";
+import Categories from "./Categories/Categories";
 import SmallBanners from "./SmallBanners/SmallBanners";
 
 const Main = () => {
@@ -6,6 +7,7 @@ const Main = () => {
     <main>
       <Banner />
       <SmallBanners />
+      <Categories />
     </main>
   );
 };
