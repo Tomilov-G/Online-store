@@ -1,5 +1,6 @@
 import Banner from "./Banner/Banner";
 import Recommendations from "./Recommendations/Recommendations";
+import Categories from "./Categories/Categories";
 import SmallBanners from "./SmallBanners/SmallBanners";
 
 const Main = () => {
@@ -8,6 +9,7 @@ const Main = () => {
       <Banner />
       <SmallBanners />
       <Recommendations />
+      <Categories />
     </main>
   );
 };
