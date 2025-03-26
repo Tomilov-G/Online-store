@@ -1,15 +1,70 @@
 .toggleSection {
+  font-family: "SFProDisplay", sans-serif;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 32px;
+  align-items: center;
+  .title {
+    font-size: 42px;
+    font-weight: 400;
+  }
   .arrows {
     display: flex;
     .arrowIcon {
+      cursor: pointer;
+      user-select: none;
       width: 40px;
       height: 40px;
       margin-right: 70px;
       &:nth-child(2) {
         margin: 0px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .toggleSection {
+    .title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .toggleSection {
+    .title {
+      font-size: 24px;
+    }
+    .arrows {
+      .arrowIcon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .toggleSection {
+    flex-direction: column;
+    .title {
+      padding-bottom: 32px;
+    }
+    .arrows {
+      .arrowIcon {
+        width: 28px;
+        height: 28px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .toggleSection {
+    .title {
+      text-align: center;
     }
   }
 }

@@ -4,11 +4,18 @@ import rightArrow from "../../../../assets/icons/RightArrow.svg";
 import { FC } from "react";
 
 interface RecommendationsToggleProps {
-    prevCard: () => void; 
-    nextCard: () => void; 
+  prevCard: () => void;
+  nextCard: () => void;
+  disabledRightArrowClassName?: string;
+  disabledLeftArrowClassName?: string;
 }
 
-const RecommendationsToggle: FC<RecommendationsToggleProps> = ({ prevCard, nextCard }) => {
+const RecommendationsToggle: FC<RecommendationsToggleProps> = ({
+  prevCard,
+  nextCard,
+  disabledRightArrowClassName,
+  disabledLeftArrowClassName,
+}) => {
   return (
     <div className={classes.toggleSection}>
       <h2 className={classes.title}>Рекомендуем приобрести</h2>
@@ -16,13 +23,13 @@ const RecommendationsToggle: FC<RecommendationsToggleProps> = ({ prevCard, nextC
         <img
           src={leftArrow}
           alt=""
-          className={classes.arrowIcon}
+          className={`${classes.arrowIcon} ${disabledLeftArrowClassName || ""}`}
           onClick={prevCard}
         />
         <img
           src={rightArrow}
           alt=""
-          className={classes.arrowIcon}
+          className={`${classes.arrowIcon} ${disabledRightArrowClassName || ""}`}
           onClick={nextCard}
         />
       </div>

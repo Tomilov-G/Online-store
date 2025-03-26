@@ -1,12 +1,130 @@
 .card {
-    width: 100%;
-    background-color: var(--color-light-grey);
+  padding: 24px 16px;
+  border-radius: 9px;
+  background-color: var(--color-light-grey);
+  flex: 0 0 auto;
+  width: calc(100% / var(--cards-to-show));
+  .cardContent {
+    font-family: "SFProDisplay", sans-serif;
+    margin-top: 16px;
     align-items: center;
     text-align: center;
     justify-items: center;
-    padding: 24px 16px;
-    border-radius: 9px;
-    .title {
-        max-width: 236px;
+    width: 100%;
+    .image {
+      width: 160px;
+      height: 160px;
+      user-select: none;
     }
+    .title {
+      height: 60px;
+      user-select: none;
+      font-weight: 500px;
+      font-size: 20px;
+      padding-top: 16px;
+    }
+    .price {
+      font-weight: 600;
+      font-size: 28px;
+      margin: 16px 0px 24px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1734px) {
+  .card {
+    .cardContent {
+      .title {
+        font-size: 18px;
+      }
+      .price {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1622px) {
+  .card {
+    .cardContent {
+      .title {
+        font-size: 16px;
+      }
+      .price {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1509px) {
+  .card {
+    .cardContent {
+      .title {
+        font-size: 14px;
+      }
+      .price {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1219px) {
+//   .card {
+//     width: calc(100% / 4);
+//   }
+// }
+
+// @media screen and (max-width: 899px) {
+//   .card {
+//     width: calc(100% / 3);
+//   }
+// }
+
+@media screen and (max-width: 758px) {
+  .card {
+    .cardContent {
+      .title {
+        font-size: 12px;
+      }
+      .price {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 634px) {
+//   .card {
+//     width: calc(100% / 2);
+//   }
+// }
+
+@media screen and (max-width: 485px) {
+  .card {
+    .cardContent {
+      .price {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 474px) {
+//   .card {
+//     width: calc(100% / 1);
+//   }
+// }
+
+@media screen and (max-width: 360px) {
+  .card {
+    .cardContent {
+      width: 100%;
+      .image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
 }

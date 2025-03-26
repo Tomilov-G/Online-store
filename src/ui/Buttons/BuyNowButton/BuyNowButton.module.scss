@@ -1,6 +1,7 @@
 .buyNowButton {
+  display: block;
   color: var(--color-light);
-  width: 260px;
+  width: 90%;
   height: 58px;
   border: none;
   background-color: var(--color-dark);
@@ -22,19 +23,34 @@
   }
 }
 
-@media screen and (max-width: 1867px) {
-  .byuNowButton {
-    width: 183px;
-    height: 48px;
+@media screen and (max-width: 1509px) {
+  .buyNowButton {
+    height: 50px;
+    .buttonText {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .buyNowButton {
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .buyNowButton {
+    height: 40px;
     .buttonText {
       font-size: 14px;
     }
   }
 }
 
-// @media screen and (max-width: 785px) {
-//   .shopNowButton {
-//     width: 184px;
-//     height: 56px;
-//   }
-// }
+@media screen and (max-width: 485px) {
+  .buyNowButton {
+    height: 35px;
+    .buttonText {
+      font-size: 12px;
+    }
+  }
+}

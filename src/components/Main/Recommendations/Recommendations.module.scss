@@ -1,11 +1,57 @@
-.recommendationsInner {
+.recommendations {
+  .recommendationsInner {
     padding: 56px 150px;
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(2, auto);
-    .cardSection {
-        display: grid;
-        grid-template-columns: repeat(6, auto);
-        column-gap: 16px;
+    display: flex;
+    flex-direction: column;
+    .disableLeftArrow {
+      opacity: 0.3;
+      pointer-events: none;
     }
+    .disableRightArrow {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+    .sliderWrapper {
+      padding-right: 150px;
+      overflow: hidden;
+      .cardSection {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        justify-content: start;
+        column-gap: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1427px) {
+  .recommendations {
+    .recommendationsInner {
+      padding: 56px 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1327px) {
+  .recommendations {
+    .recommendationsInner {
+      padding: 56px 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .recommendations {
+    .recommendationsInner {
+      padding: 56px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .recommendations {
+    .recommendationsInner {
+      padding: 56px 16px;
+    }
+  }
 }

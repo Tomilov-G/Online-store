@@ -8,8 +8,8 @@ const Main = () => {
     <main>
       <Banner />
       <SmallBanners />
-      <Recommendations />
       <Categories />
+      <Recommendations />
     </main>
   );
 };
