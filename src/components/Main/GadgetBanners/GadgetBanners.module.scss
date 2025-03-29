@@ -1,0 +1,229 @@
+.gadgetBanners {
+  width: 100%;
+  .gadgetBannersInner {
+    display: flex;
+    flex-wrap: wrap;
+    .accessoriesBanner {
+      width: 25%;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .appleIpadBanner {
+      width: 25%;
+      flex-direction: column;
+      background-color: var(--color-light-grey1);
+    }
+    .samsungGalaxyBanner {
+      width: 25%;
+      flex-direction: column;
+      background-color: var(--color-light-grey);
+    }
+    .macBookBanner {
+      width: 25%;
+      flex-direction: column;
+      background-color: var(--color-dark-grey);
+      .textContent {
+        .title {
+          color: var(--color-light);
+        }
+        .button {
+          color: var(--color-light);
+          border-color: var(--color-light);
+          &:hover {
+            transition: 0.4s;
+            color: var(--color-dark);
+            background-color: var(--color-light);
+          }
+        }
+      }
+    }
+  }
+  .textContent {
+    align-items: flex-start;
+    padding: 10px 32px 56px 32px;
+    .title {
+      white-space: nowrap;
+      font-size: 39px;
+      margin-bottom: 16px;
+    }
+    .description {
+      font-size: 20px;
+      min-height: 170px;
+      margin-bottom: 16px;
+    }
+  }
+  img {
+    width: 500px;
+    height: 500px;
+  }
+  .button {
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+    &:hover {
+      transition: 0.4s;
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .gadgetBanners {
+    .textContent {
+      .title {
+        font-size: 33px;
+      }
+      .description {
+        font-size: 18px;
+        min-height: 140px;
+      }
+    }
+    img {
+      width: 450px;
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: 1602px) {
+  .gadgetBanners {
+    .textContent {
+      .description {
+        min-height: 160px;
+      }
+    }
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .gadgetBanners {
+    .gadgetBannersInner {
+      .accessoriesBanner {
+        .title {
+          white-space: wrap;
+        }
+      }
+    }
+    .textContent {
+      .title {
+        min-height: 131px;
+        font-size: 29px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+    img {
+      width: 360px;
+      height: 360px;
+    }
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .gadgetBanners {
+    .textContent {
+      .description {
+        min-height: 170px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .gadgetBanners {
+    .gadgetBannersInner {
+      .accessoriesBanner {
+        width: 50%;
+      }
+      .appleIpadBanner {
+        width: 50%;
+      }
+      .samsungGalaxyBanner {
+        width: 50%;
+      }
+      .macBookBanner {
+        width: 50%;
+      }
+    }
+    .textContent {
+      .description {
+        min-height: 110px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .gadgetBanners {
+    .textContent {
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gadgetBanners {
+    .textContent {
+      .description {
+        min-height: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .gadgetBanners {
+    margin-bottom: 40px;
+    .accessoriesBanner {
+      padding-bottom: 0px;
+      .textContent {
+        padding: 0px;
+        .title {
+          padding: 0px;
+          white-space: wrap;
+        }
+        .description {
+          min-height: 100px;
+        }
+      }
+    }
+    .appleIpadBanner {
+      padding-bottom: 0px;
+      .textContent {
+        padding: 0px;
+        .description {
+          min-height: 100px;
+        }
+      }
+    }
+    .samsungGalaxyBanner {
+      padding-bottom: 0px;
+      .textContent {
+        padding: 0px;
+        .description {
+          min-height: 100px;
+        }
+      }
+    }
+    .macBookBanner {
+      padding-bottom: 0px;
+      .textContent {
+        padding: 0px;
+        .description {
+          min-height: 100px;
+          padding: 0px;
+        }
+      }
+    }
+    .button {
+      margin-bottom: 70px;
+    }
+  }
+}

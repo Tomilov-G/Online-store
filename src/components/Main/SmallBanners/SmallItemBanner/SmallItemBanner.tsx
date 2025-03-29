@@ -13,7 +13,8 @@ interface SmallItemBannerProps {
   appleWord?: string;
   spanTitle?: string;
   titleClassName?: string;
-  description: string;
+  description?: string;
+  descriptionClassName?: string;
   children?: React.ReactNode;
 }
 
@@ -29,6 +30,7 @@ const SmallItemBanner: FC<SmallItemBannerProps> = ({
   spanTitle,
   titleClassName,
   description,
+  descriptionClassName,
   children,
 }) => {
   return (
@@ -47,7 +49,7 @@ const SmallItemBanner: FC<SmallItemBannerProps> = ({
           <br className={classes.indent} />
           {title} <span className={classes.spanTitle}>{spanTitle}</span>
         </h2>
-        <p className={classes.description}>{description}</p>
+        <p className={`${classes.description} ${descriptionClassName || ""}`}>{description}</p>
         {children}
       </div>
     </div>
