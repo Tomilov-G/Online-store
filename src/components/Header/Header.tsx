@@ -6,11 +6,13 @@ import Logo from "./Logo/Logo";
 import Navigation from "./Navigation/Navigation";
 import IconsBlock from "./IconsBlock/IconsBlock";
 
+import logo from "../../assets/images/HeaderImage/Logo.svg";
+
 const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.headerInner}>
-        <Logo />
+        <Logo image={logo}/>
         <Input className={classes.headerInput} />
         <Navigation className={classes.headerNavigation} />
         <IconsBlock />
