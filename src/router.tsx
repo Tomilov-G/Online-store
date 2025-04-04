@@ -8,6 +8,7 @@ import { ContactsPage } from "./pages/СontactsPage.tsx";
 import { CartPage } from "./pages/CartPage.tsx";
 import { FavoritesPage } from "./pages/FavoritesPage.tsx";
 import { UserProfilePage } from "./pages/UserProfilePage.tsx";
+import { ItemDescriptionPage } from "./pages/ItemDescriptionPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <UserProfilePage />,
       },
+      {
+        path: "/description",
+        element: < ItemDescriptionPage />
+      }
     ],
   },
   {
