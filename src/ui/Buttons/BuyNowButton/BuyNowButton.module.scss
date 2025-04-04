@@ -1,0 +1,56 @@
+.buyNowButton {
+  display: block;
+  color: var(--color-light);
+  width: 90%;
+  height: 58px;
+  border: none;
+  background-color: var(--color-dark);
+  border-radius: 8px;
+  &:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.5s;
+  }
+  &:active {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.5s;
+  }
+  .buttonText {
+    font-size: 18px;
+    font-family: "SFProDisplay", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1509px) {
+  .buyNowButton {
+    height: 50px;
+    .buttonText {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .buyNowButton {
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .buyNowButton {
+    height: 40px;
+    .buttonText {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .buyNowButton {
+    height: 35px;
+    .buttonText {
+      font-size: 12px;
+    }
+  }
+}

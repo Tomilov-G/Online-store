@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 import BurgerIcon from "./BurgerIcon/BurgerIcon";
 import BurgerContent from "./BurgerContent/BurgerContent";
+import SCREEN_SIZES from "../../../constants/screenSizes";
 
-const MOBILE_WIDTH = 635
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -14,7 +14,7 @@ const Burger = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > MOBILE_WIDTH && isOpen) {
+      if (window.innerWidth > SCREEN_SIZES.MOBILE && isOpen) {
         setIsOpen(false);
       }
     };

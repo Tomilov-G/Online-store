@@ -1,0 +1,8 @@
+const SCREEN_SIZES = {
+  SMALL_MOBILE: 475,
+  MOBILE: 635,
+  TABLET: 900,
+  DESKTOP: 1220,
+};
+
+export default SCREEN_SIZES;
