@@ -11,6 +11,7 @@ import classes from "./GadgetBanners.module.scss";
 import SmallItemBanner from "../SmallBanners/SmallItemBanner/SmallItemBanner";
 import GadgetBannersData from "./GadgetBannersData";
 import ShopNowButton from "../../../ui/Buttons/ShopNowButton/ShopNowButton";
+import SCREEN_SIZES from "../../../constants/screenSizes";
 
 const GadgetBanners = () => {
   const firstGadgetBanner = useMemo(() => {
@@ -52,15 +53,14 @@ const GadgetBanners = () => {
     ));
   }, []);
 
-  // Заменить на конст
-  const isMobile = useMediaQuery({ maxWidth: 635 });
+  const isMobile = useMediaQuery({ maxWidth: SCREEN_SIZES.MOBILE });
 
   if (isMobile) {
     return (
       <section className={classes.gadgetBanners}>
         <Swiper
           modules={[Pagination, Autoplay]}
-          pagination={{ clickable: true}}
+          pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={1}
           autoplay={{ delay: 3000 }}
