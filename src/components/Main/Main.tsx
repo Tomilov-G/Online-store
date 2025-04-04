@@ -1,3 +1,4 @@
+import React from "react";
 import Banner from "./Banner/Banner";
 import Recommendations from "./Recommendations/Recommendations";
 import Categories from "./Categories/Categories";
