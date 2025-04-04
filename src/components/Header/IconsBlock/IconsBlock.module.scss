@@ -15,19 +15,19 @@
     }
     .favorites {
       &:hover {
-        transform: translateY(-5px) scale(1.1);
+        transform: translateY(-5px);
         color: rgb(194, 4, 4);
       }
     }
     .cart {
       &:hover {
-        transform: translateY(-5px) scale(1.1);
+        transform: translateY(-5px);
         color: var(--color-grey);
       }
     }
     .user {
       &:hover {
-        transform: translateY(-5px) scale(1.1);
+        transform: translateY(-5px);
         color: var(--color-dark-grey);
       }
     }

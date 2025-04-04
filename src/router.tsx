@@ -8,6 +8,8 @@ import { ContactsPage } from "./pages/СontactsPage.tsx";
 import { CartPage } from "./pages/CartPage.tsx";
 import { FavoritesPage } from "./pages/FavoritesPage.tsx";
 import { UserProfilePage } from "./pages/UserProfilePage.tsx";
+import { ServicesPage } from "./pages/ServicesPage.tsx";
+import { AssistentToTheBayerPage } from "./pages/AssistentToTheBayerPage.tsx";
 import { ItemDescriptionPage } from "./pages/ItemDescriptionPage.tsx";
 
 const router = createBrowserRouter([
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
         element: <UserProfilePage />,
       },
       {
+        path: "/services",
+        element: <ServicesPage />,
+      },
+      {
+        path: "/assistent",
+        element: <AssistentToTheBayerPage />,
+      },
+      {
         path: "/description",
         element: < ItemDescriptionPage />
       }
@@ -55,4 +65,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router
+export default router;

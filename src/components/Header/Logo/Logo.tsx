@@ -2,17 +2,22 @@ import classes from "./Logo.module.scss";
 
 import { Link } from "react-router-dom";
 
-import logo from "../../../assets/images/HeaderImage/Logo.svg";
 import { FC } from "react";
 
 interface LogoProps {
   onClick?: () => void;
+  image: string;
+  imageClassName?: string;
 }
 
-const Logo:FC<LogoProps> = ({ onClick }) => {
+const Logo: FC<LogoProps> = ({ onClick, image, imageClassName }) => {
   return (
     <Link to="/" onClick={onClick}>
-      <img src={logo} alt="Логотип" className={classes.logo} />
+      <img
+        src={image}
+        alt="Логотип"
+        className={`${classes.logo}${imageClassName || ""}`}
+      />
     </Link>
   );
 };

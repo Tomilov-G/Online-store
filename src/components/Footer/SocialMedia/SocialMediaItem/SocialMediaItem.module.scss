@@ -1,0 +1,55 @@
+.iconLink {
+  padding-left: 50px;
+  &:nth-child(1) {
+    padding-left: 0px;
+    :hover,
+    :active {
+      transition: 0.3s;
+      transform: translateY(-5px);
+      color: #6868e0;
+    }
+  }
+  &:nth-child(2) {
+    :hover,
+    :active {
+      transition: 0.3s;
+      transform: translateY(-5px);
+      color: #9d9dee;
+    }
+  }
+  &:nth-child(3) {
+    :hover,
+    :active {
+      transition: 0.3s;
+      transform: translateY(-5px);
+      color: #16a709;
+    }
+  }
+  .icon {
+    color: var(--color-light);
+    font-size: 35px;
+    transition: transform 0.3s ease-out, color 0.3s ease-out;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .iconLink {
+    .icon {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .iconLink {
+    padding-left: 25px;
+    .icon {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+    
+}
