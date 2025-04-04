@@ -1,4 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { FC, useEffect, useMemo, useState } from "react";
+import React from "react";
+
 import { useAppDispatch, useAppSelector } from "../../../store/hooks/hooks";
 import classes from "./Recommendations.module.scss";
 
@@ -9,7 +11,8 @@ import BuyNowButton from "../../../ui/Buttons/BuyNowButton/BuyNowButton";
 import SCREEN_SIZES from "../../../constants/screenSizes";
 import fetchCatalogItems from "../../../api/services/GadgetsService";
 
-const Recommendations = () => {
+
+const Recommendations:FC = () => {
   const dispatch = useAppDispatch();
   const { catalogItems } = useAppSelector((state) => state.catalog);
 

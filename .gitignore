@@ -25,3 +25,6 @@ dist-ssr
 
 # JSON
 package-lock.json
+
+#ts 
+declaration.d.ts
