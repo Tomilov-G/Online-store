@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+
 import { useAppDispatch, useAppSelector } from "../../../store/hooks/hooks";
 import classes from "./Recommendations.module.scss";
 

@@ -1,0 +1,92 @@
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "SFProDisplay", sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  .title {
+    color: var(--color-light);
+    font-size: 92px;
+    font-weight: 100;
+  }
+  .span {
+    font-weight: 800;
+  }
+  .subtitle {
+    color: var(--color-grey);
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1867px) {
+  .textContent {
+    .title {
+      font-size: 72px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .textContent {
+    .title {
+      font-size: 62px;
+    }
+    .subtitle {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .textContent {
+    .title {
+      font-size: 52px;
+    }
+    .subtitle {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .textContent {
+    .title {
+      font-size: 42px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .textContent {
+    .title {
+      font-size: 32px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .textContent {
+    .title {
+      font-size: 32px;
+      line-height: 100%;
+      white-space: wrap;
+      padding-bottom: 20px;
+    }
+    .subtitle {
+      font-size: 12px;
+    }
+  }
+}
