@@ -1,0 +1,25 @@
+.favorites {
+  display: flex;
+  justify-content: flex-end;
+  .icon {
+    width: 32px;
+    height: 32px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .favoriteIcon {
+    transition: 0.3s;
+    color: rgb(194, 4, 4);
+  }
+}
+@media screen and (max-width: 1440px) {
+  .favorites {
+    display: flex;
+    justify-content: flex-end;
+    .icon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
