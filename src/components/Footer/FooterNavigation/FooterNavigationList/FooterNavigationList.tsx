@@ -15,7 +15,7 @@ const FooterNavigationList: FC<FooterNavigationListProps> = ({
   return (
     <ul className={classes.serviceList}>
       <h3 className={classes.title}>{title}</h3>
-      {navigationList.items.map((item, index) => (
+      {navigationList.items?.map((item, index) => (
         <FooterNavigationListItem key={index} {...item} />
       ))}
     </ul>
